@@ -9,22 +9,16 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 <body>
   <header>
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
+          <a href="index.html" class="pull-left">
             <div id="logo-img"></div>
           </a>
-
-          <div class="navbar-brand">
-            <a href="index.html"><h1>ORGANIC GUJARATWALA</h1></a>
-            <p>
-              <span>Truly Pure And Traditional</span>
-            </p>
-          </div>
 
           <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -42,19 +36,15 @@
             </li>
             <li>
               <a href="#">
-                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Products</a>
+                <span class="glyphicon glyphicon-th-large"></span><br class="hidden-xs"> Products</a>
             </li>
             <li>
               <a href="#">
                 <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
             </li>
-            <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
-            </li>
             <li id="phone" class="hidden-xs">
-              <a href="tel:9004331657">
-                <span>9004331657</span></a><div>* We Deliver Across All India</div>
+              <a href="https://wa.me/918955639124" target="_blank">
+                <span>+91 8955639124</span></a><div>Click to Order on WhatsApp</div>
             </li>
           </ul><!-- #nav-list -->
         </div><!-- .collapse .navbar-collapse -->
@@ -63,34 +53,28 @@
   </header>
 
   <div id="call-btn" class="visible-xs">
-    <a class="btn" href="tel:9004331657">
-    <span class="glyphicon glyphicon-earphone"></span>
-    9004331657
+    <a class="btn" href="https://wa.me/918955639124">
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    Order Now
     </a>
   </div>
-  <div id="xs-deliver" class="text-center visible-xs">* We Deliver Across All India</div>
+  <div id="xs-deliver" class="text-center visible-xs">* We deliver all over India</div>
 
   <div id="main-content" class="container">
     <div class="jumbotron">
-      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
+      <img src="images/jumbotron_small.png" alt="Picture of restaurant" class="img-responsive visible-xs">
     </div>
 
     <div id="home-tiles" class="row">
-      <div class="col-md-6 col-sm-12 col-xs-12">
-        <a href="menu-categories.html"><div id="menu-tile"><span>Products</span></div></a>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#"><div id="menu-tile"><span>Products</span></div></a>
       </div>
-      <!-- To add video tile * -->
-      <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
-      </div> -->
-      <div class="col-md-6 col-sm-12 col-xs-12">
-        <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3635874,-76.7138622,17z/data=!4m6!1m3!3m2!1s0x89c81a14e7817803:0xab20a0e99daa17ea!2sDavid+Chu's+China+Bistro!3m1!1s0x89c81a14e7817803:0xab20a0e99daa17ea" target="_blank">
-        <a href="https://www.google.com/maps/place/Aarey+Unit+No+2/@19.163576,72.8657157,18z/data=!4m6!3m5!1s0x3be7b76b32301453:0x55a0f5d84318e8e4!8m2!3d19.1636393!4d72.8664397!16s%2Fg%2F11v05x1ltr?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-        <div id="map-tile">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1884.3617603912085!2d72.86571569697624!3d19.163575962966227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b76b32301453%3A0x55a0f5d84318e8e4!2sAarey%20Unit%20No%202!5e0!3m2!1sen!2sin!4v1727689181903!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0" loading="lazy" allowfullscreen></iframe>
-            <span>map</span>
-          </div>
-        </a>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#"><div id="specials-tile"><span>Specials</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <iframe width="100%" height="250px" style="border: 0;" src="https://www.youtube.com/embed/59w2G_L1OMo">
+        </iframe>
       </div>
     </div><!-- End of #home-tiles -->
   </div><!-- End of #main-content -->
@@ -100,8 +84,8 @@
       <div class="row">
         <section id="address" class="col-sm-6">
           <span>Address:</span><br>
-          Unit No. 2, Aarey Colony,<br>
-          Goregaon, Mumbai, Maharashtra 400065
+          Organic Gujaratwala Farms,<br>
+          Indas Road, Basni Belima 341021
           <p>* We deliver across all over India</p>
           <hr class="visible-xs">
         </section>
