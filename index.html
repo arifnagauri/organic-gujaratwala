@@ -1,35 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Organic Gujaratwala</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organic Gujaratwala</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <body>
   <header>
-    <nav id="header-nav" class="navbar navbar-default">
+    <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <a href="index.html" class="pull-left">
             <div id="logo-img"></div>
           </a>
 
-          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <!-- <h2 id="tagline">Truly Pure And Traditional</h2> -->
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#collapsable-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
         </div>
-        
+
         <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li class="visible-xs active">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
@@ -44,7 +49,8 @@
             </li>
             <li id="phone" class="hidden-xs">
               <a href="https://wa.me/918955639124" target="_blank">
-                <span>+91 8955639124</span></a><div>Click to Order on WhatsApp</div>
+                <span>+91 8955639124</span></a>
+              <div>* Enquire Now</div>
             </li>
           </ul><!-- #nav-list -->
         </div><!-- .collapse .navbar-collapse -->
@@ -52,25 +58,52 @@
     </nav><!-- #header-nav -->
   </header>
 
-  <div id="call-btn" class="visible-xs">
-    <a class="btn" href="https://wa.me/918955639124">
-      <i class="fa fa-whatsapp" aria-hidden="true"></i>
-    Order Now
-    </a>
+  <div id="hero-box" class="container-fluid visible-xs">
+    <div class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#my-pics" data-slide-to="0" class="active"></li>
+        <li data-target="#my-pics" data-slide-to="1"></li>
+        <li data-target="#my-pics" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/jumbotron_small.png" alt="Gir Cows">
+        </div>
+        <div class="item">
+          <img src="images/ghee-label-1.jpg" alt="Ghee Label">
+        </div>
+        <div class="item">
+          <img src="images/ghee-label-1.jpg" alt="Certifications">
+        </div>
+      </div>
+      <!-- Previous/Next controls -->
+      <a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </div>
-  <div id="xs-deliver" class="text-center visible-xs">* We deliver all over India</div>
+
+  <div class="jumbotron hidden-xs">
+    <img src="images/jumbotron_medium.png" alt="Picture of restaurant" class="img-responsive">
+  </div>
 
   <div id="main-content" class="container">
-    <div class="jumbotron">
-      <img src="images/jumbotron_small.png" alt="Picture of restaurant" class="img-responsive visible-xs">
-    </div>
-
     <div id="home-tiles" class="row">
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="#"><div id="menu-tile"><span>Products</span></div></a>
+        <a href="#">
+          <div id="menu-tile"><span>Products</span></div>
+        </a>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="#"><div id="specials-tile"><span>Specials</span></div></a>
+        <a href="#">
+          <div id="specials-tile"><span>Specials</span></div>
+        </a>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12">
         <iframe width="100%" height="250px" style="border: 0;" src="https://www.youtube.com/embed/59w2G_L1OMo">
@@ -78,6 +111,13 @@
       </div>
     </div><!-- End of #home-tiles -->
   </div><!-- End of #main-content -->
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="https://wa.me/918955639124">
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    Know More About Us
+    </a>
+  </div>
 
   <footer class="panel-footer">
     <div class="container">
@@ -103,4 +143,5 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>
